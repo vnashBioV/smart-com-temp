@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html{
+  @apply overflow-x-hidden
+}
+.active{
+  @apply font-bold 
+}
+.css-15befwp-MuiRating-root{
+  @apply !text-[1rem]
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-[10px];
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-[#555];
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  @apply bg-[#888];
+}
+
+.blog-body{    
+  /**Major Properties**/
+  overflow:hidden;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+}
